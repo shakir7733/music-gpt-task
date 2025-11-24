@@ -1,6 +1,6 @@
 # Music Creation UI
 
-A production-ready, feature-rich music generation interface built with Next.js 14, featuring real-time WebSocket simulation, advanced animations, and Figma design system integration.
+A production-ready, feature-rich music generation interface built with Next.js 14, featuring real-time WebSocket simulation, advanced animations.
 
 ## 🎯 Overview
 
@@ -24,12 +24,6 @@ This application provides a sophisticated UI for AI-powered music creation, with
   5. **Finalizing** (100%, 1s)
 - **Realistic Behavior**: 80% success rate, 20% random failures with error messages
 - **Auto-Sync**: Automatic Zustand store synchronization with WebSocket events
-
-### 🎭 Figma MCP Integration
-- **Design Tokens System**: Centralized tokens for colors, spacing, radii, typography, shadows
-- **Component Tokens**: Per-component design specifications (PromptBox, SubmitButton, ProfilePopup, etc.)
-- **Helper Functions**: `figmaQuery()` and `figmaNodeQuery()` for fetching design data
-- **Type-Safe**: Full TypeScript interfaces for all Figma data structures
 
 ### 📊 Recent Generations Panel
 - **Fixed Bottom Panel**: Always visible with backdrop blur and gradient background
@@ -154,7 +148,6 @@ src/
 ├── hooks/
 │   └── useWebSocketClient.ts  # WebSocket hook with auto-sync
 ├── lib/
-│   ├── figma.ts               # Figma MCP integration
 │   ├── store.ts               # Zustand store
 │   └── websocket-client.ts    # Legacy WebSocket client
 ├── services/
@@ -338,7 +331,6 @@ export default withErrorBoundary(MyComponent);
 All components and utilities are fully typed with TypeScript:
 - `GenerationItem`, `GenerationStatus` interfaces
 - `WebSocketEvent`, `WebSocketEventType` enums
-- `FigmaDesignTokens`, `FigmaNodeMetadata` types
 - `GenerationState` Zustand store interface
 
 ## 📚 Additional Resources
@@ -346,7 +338,6 @@ All components and utilities are fully typed with TypeScript:
 - [Next.js Documentation](https://nextjs.org/docs)
 - [TailwindCSS v4](https://tailwindcss.com/docs)
 - [Zustand](https://github.com/pmndrs/zustand)
-- [Figma Dev Mode MCP](https://github.com/figma/dev-mode-mcp)
 
 ## 🤝 Contributing
 
@@ -364,7 +355,6 @@ MIT License - feel free to use this project for your own purposes.
 
 - Design inspiration from MusicGPT
 - Animation techniques from senior UI/UX patterns
-- Figma MCP integration for design system management
 
 ---
 
